@@ -1,2 +1,0 @@
-# arquitetura-hexagonal
-Estudo
