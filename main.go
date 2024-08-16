@@ -14,5 +14,7 @@ func main() {
 	productDbAdapter := db2.NewProductDb(db)
 
 	productService := application.NewProductService(productDbAdapter)
-	productService.Create("Produto xemplo", 20)
+	product, _ := productService.Create("Produto xemplo", 20)
+
+	productService.Enable(product)
 }
